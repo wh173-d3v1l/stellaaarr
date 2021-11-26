@@ -1,0 +1,163 @@
+{
+    "name": "WhatsAsenaDuplicated",
+    "description": "DarkBot project - Makes it easy and fun to use Whatsapp..",
+    "logo": "https://raw.githubusercontent.com/DrkBotBase/WhatsAsenaDuplicated/master/media/gif/PicsArt_07-18-06.46.26.jpg",
+    "keywords": ["whatsapp", "userbot", "DrkBox", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/BotPrivateDrk/WhatsAsenaDuplicated",
+    "website":   "https://t.me/Dark1522",
+    "success_url": "https://t.me/Dark1522",
+    "stack": "container",
+    "env": {
+        "ASENA_SESSION": {
+            "description": "Ponga aca su codigo de SESSION obtenida de qr.js.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot language.  Español => ES, English => en",
+            "required": true,
+            "value": "ES"
+        },
+        "ANTİ_LİNK": {
+            "description": "Sistema de bloqueo de enlaces. Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "Establezca true para agregar fecha y hora automáticas al estado. Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "Indicativo para activar los comandos. Prefix to activate the commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "FULL_EVA": {
+            "description": "¡Convierta su cuenta en un chatbot! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "Establezca true si no desea ver ningún registro de errores. Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "Parte de lectura de mensaje, ponga true o false si quiere que el mensaje salga leido o no.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "Si se esta ejecutando HEROKU, ponga true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Personalizable mensaje de MUTE! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "Lista Negra, elija en que chat no funcionara el BOt. Ej: 1385xxxxxxx,1268xxxxxxx.",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Personalizable mensaje de UNMUTE! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Block Mesajı. Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Unblock Mesajı. Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "Forma de usar el BOT. Si usa public los demas pueden usar el BOT, si usa private solo usted podra usarlo",
+            "required": true,
+            "value": "private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "Exclusivo para desarrolladores.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Ponga aca su clave obtenda en https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Personalizable Alive mensaje! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "BAN_MESSAGE": {
+            "description": "Personalizable BAN mensaje! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Personalizable mensaje de Autoexpulsion! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Personalizable Promote mensaje! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Personalizable Demote mensaje! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Personalizable mensaje de AFK! Use: default para cambiar despues.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": "Escriba el enlace de la imagen para el complemento Gan Style.",
+            "required": true,
+            "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "Escriba true si no desea aparecer en linea.",
+            "required": false,
+            "value": "true"
+        },
+        "COFFEEHOUSE_API_KEY": {
+            "description": "CoffeeHouse API Key obtenida en. https://coffeehouse.intellivoid.net/",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
